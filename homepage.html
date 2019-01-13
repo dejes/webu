@@ -60,18 +60,16 @@
             localStorage.setItem('cheat','0');
             window.open('pick.html','_self');
         }
-        
-        jQuery(document).ready(function(){
-            jQuery(window).load(function(){  //load函数
-                jQuery("#loading").hide();
-            });
-        });
+        window.onload=function(){ 
+            $(".loading").hide(); 
+        } 
      
     </script>
 </head>
 <body>
    
-    <img id='loading' src="zzhou.gif" style="position:absolute; top: 30% ; left: 40%;">
+    <img id='load' src="zzhou.gif" style="position:absolute; top: 30% ; left: 40% ;display: none;  ">
+    <div class="loading"> bang</div>
     
     <audio id="sound" preload="auto"><source src="bt6.mp3" type="audio/mpeg">button</audio>
     <div class="head1">Pokemon</div>
